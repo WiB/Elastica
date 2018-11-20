@@ -4,7 +4,6 @@ namespace Elastica;
 
 use Elastica\Exception\InvalidException;
 use Elastica\Bulk\Action;
-use Elastica\Filter\Bool;
 use Elastica\Exception\NotImplementedException;
 
 /**
@@ -73,6 +72,7 @@ class Document extends AbstractUpdateAction
 
     /**
      * @param string $key
+     *
      * @return bool
      */
     public function __isset($key)
@@ -119,6 +119,7 @@ class Document extends AbstractUpdateAction
 
     /**
      * @param string $key
+     *
      * @return bool
      */
     public function has($key)
@@ -268,6 +269,7 @@ class Document extends AbstractUpdateAction
 
     /**
      * @param bool $value
+     *
      * @return \Elastica\Document
      */
     public function setDocAsUpsert($value)
